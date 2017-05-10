@@ -1,0 +1,9 @@
+{
+  "name": "capitalsucks-news",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-local-storage": "latest"
+  }
+}

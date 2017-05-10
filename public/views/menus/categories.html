@@ -1,0 +1,8 @@
+<section class="menu categories">
+    <section class="item" ng-repeat="category in categories">
+        <p>{{ category.name }}</p>
+        <section class="submenu">
+            <section class="item" ng-repeat="subcategory in category.subcategories">{{ subcategory.name }}</section>
+        </section>
+    </section>
+</section>

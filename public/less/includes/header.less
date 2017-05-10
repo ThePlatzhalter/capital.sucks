@@ -1,0 +1,66 @@
+@subpages_height: 20px;
+@subpages_item_padding: 10px;
+
+@categories_height: 50px;
+@categories_item_padding: 20px;
+
+.header {
+  .menu {
+    .item {
+      float: left;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &.subpages {
+      height: @subpages_height;
+      background: #3a1300;
+      color: white;
+      padding: 5px 20px;
+      font-family: sans-serif;
+
+      .item {
+        line-height: @subpages_height;
+        padding-right: @subpages_item_padding;
+        font-size: 12px;
+      }
+    }
+
+    &.categories {
+      height: @categories_height + 10px;
+      background: white;
+      color: #61000b;
+      font-family: sans-serif;
+
+      .item {
+        line-height: @categories_height;
+        padding-right: @categories_item_padding;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+
+        &:hover {
+          background: #61000b;
+          color: white;
+        }
+
+        &:last-child {
+          padding-right: 20px;
+        }
+
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  .image {
+    background: lightgray;
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+}

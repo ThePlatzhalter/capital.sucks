@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <base href="/">
+</head>
+<body ng-app="CapitalSucks">
+<section class="wrapper">
+    <section class="header">
+        <subpagesmenu></subpagesmenu>
+        <section class="image"></section>
+        <categoriesmenu></categoriesmenu>
+    </section>
+    <section class="body" ng-view></section>
+    <section class="footer"></section>
+</section>
+
+<script src="/dist/vendor/angular/angular.min.js"></script>
+<script src="/dist/vendor/angular-route/angular-route.min.js"></script>
+<script src="/dist/vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+<script src="/dist/js/script.min.js"></script>
+</body>
+</html>
